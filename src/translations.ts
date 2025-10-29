@@ -51,6 +51,27 @@ export const translations: Record<'en' | 'ru', Translation> = {
         },
       ],
     },
+    portfolio: {
+      title: "Portfolio",
+      subtitle: "Some of the projects I've worked on",
+      projects: [
+        {
+          title: "Order Automation System",
+          description: "Reduced manual operations by 40% using Spring Boot & PostgreSQL.",
+          tech: ["Spring Boot", "PostgreSQL", "Docker"]
+        },
+        {
+          title: "Internal CRM Integration",
+          description: "Integrated CRM with Telegram notifications for fast client updates.",
+          tech: ["React", "Supabase", "Node.js"]
+        },
+        {
+          title: "Reporting Dashboard",
+          description: "Created a dashboard for business KPIs with real-time data.",
+          tech: ["React", "TypeScript", "Tailwind"]
+        }
+      ]
+    },
     expertise: {
       title: 'Technical Expertise',
       subtitle: 'Leveraging modern technologies to solve complex business problems',
@@ -181,6 +202,27 @@ export const translations: Record<'en' | 'ru', Translation> = {
           description: 'Обновление устаревших систем современными технологиями для повышения эффективности и снижения затрат.',
         },
       ],
+    },
+    portfolio: {
+      title: "Портфолио",
+      subtitle: "Некоторые проекты, над которыми я работал",
+      projects: [
+        {
+          title: "Система автоматизации заказов",
+          description: "Сократил ручные операции на 40% с помощью Spring Boot и PostgreSQL.",
+          tech: ["Spring Boot", "PostgreSQL", "Docker"]
+        },
+        {
+          title: "Интеграция CRM",
+          description: "Связал CRM с уведомлениями в Telegram для быстрого обновления клиентов.",
+          tech: ["React", "Supabase", "Node.js"]
+        },
+        {
+          title: "Дашборд отчётности",
+          description: "Создал дашборд для бизнес KPI с данными в реальном времени.",
+          tech: ["React", "TypeScript", "Tailwind"]
+        }
+      ]
     },
     expertise: {
       title: 'Техническая экспертиза',

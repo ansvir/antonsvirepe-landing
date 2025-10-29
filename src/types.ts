@@ -28,6 +28,15 @@ export interface Translation {
       description: string;
     }[];
   };
+  portfolio: {
+    title: string;
+    subtitle: string;
+    projects: {
+      title: string;
+      description: string;
+      tech: string[]
+    }[]
+  }
   expertise: {
     title: string;
     subtitle: string;

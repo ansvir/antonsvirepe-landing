@@ -49,7 +49,7 @@ export default function Hero({ t }: HeroProps) {
 
           <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="text-4xl font-bold text-blue-600 mb-2">50+</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">10+</div>
               <div className="text-gray-600 font-medium">{t.stats.projects}</div>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md">

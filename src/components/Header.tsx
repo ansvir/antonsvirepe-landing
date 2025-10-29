@@ -23,7 +23,7 @@ export default function Header({ t, language, onLanguageChange }: HeaderProps) {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-              {language === 'en' ? 'Portfolio' : 'Портфолио'}
+              {language === 'en' ? 'Anton Svirepa' : 'Антон Свирепа'}
             </span>
           </div>
 

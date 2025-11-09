@@ -37,9 +37,9 @@ export default function Header({ t, language, onLanguageChange }: HeaderProps) {
             <button onClick={() => scrollToSection('expertise')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               {t.nav.expertise}
             </button>
-            <button onClick={() => scrollToSection('process')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            {/* <button onClick={() => scrollToSection('process')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               {t.nav.process}
-            </button>
+            </button> */} {/* Removed */}
             <button onClick={() => scrollToSection('contact')} className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium">
               {t.nav.contact}
             </button>
@@ -83,9 +83,9 @@ export default function Header({ t, language, onLanguageChange }: HeaderProps) {
               <button onClick={() => scrollToSection('expertise')} className="text-gray-700 hover:text-blue-600 transition-colors text-left font-medium">
                 {t.nav.expertise}
               </button>
-              <button onClick={() => scrollToSection('process')} className="text-gray-700 hover:text-blue-600 transition-colors text-left font-medium">
+              {/* <button onClick={() => scrollToSection('process')} className="text-gray-700 hover:text-blue-600 transition-colors text-left font-medium">
                 {t.nav.process}
-              </button>
+              </button> */} {/* Removed */}
               <button onClick={() => scrollToSection('contact')} className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors text-center font-medium">
                 {t.nav.contact}
               </button>

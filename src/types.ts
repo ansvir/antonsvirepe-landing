@@ -5,7 +5,6 @@ export interface Translation {
     home: string;
     howWeWork: string; // Renamed from services
     expertise: string;
-    process: string;
     contact: string;
   };
   hero: {
@@ -39,6 +38,13 @@ export interface Translation {
         description: string;
       }[];
     };
+    benefits: { // Moved from top-level 'benefits'
+      title: string;
+      items: {
+        title: string;
+        description: string;
+      }[];
+    };
   };
   portfolio: {
     title: string;
@@ -54,21 +60,7 @@ export interface Translation {
     subtitle: string;
     areas: string[];
   };
-  process: {
-    title: string;
-    subtitle: string;
-    steps: {
-      title: string;
-      description: string;
-    }[];
-  };
-  benefits: {
-    title: string;
-    items: {
-      title: string;
-      description: string;
-    }[];
-  };
+  // Removed 'process' type
   cta: {
     title: string;
     subtitle: string;

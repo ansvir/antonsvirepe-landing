@@ -50,7 +50,7 @@ export default function HowWeWork({ t }: HowWeWorkProps) {
             {t.howWeWork.timeline.title}
           </h3>
         </div>
-        <div className="relative">
+        <div className="relative mb-20"> {/* Added mb-20 for spacing before benefits */}
           <div className="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-200 via-blue-400 to-blue-200"></div>
 
           <div className="space-y-12">
@@ -88,6 +88,28 @@ export default function HowWeWork({ t }: HowWeWorkProps) {
               );
             })}
           </div>
+        </div>
+
+        {/* Moved Benefits Section */}
+        <div className="text-center mb-12">
+          <h3 className="text-4xl font-bold text-gray-900 mb-4">
+            {t.howWeWork.benefits.title}
+          </h3>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {t.howWeWork.benefits.items.map((benefit, index) => (
+            <div
+              key={index}
+              className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border border-blue-200"
+            >
+              <h4 className="text-lg font-bold text-gray-900 mb-2">
+                {benefit.title}
+              </h4>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {benefit.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

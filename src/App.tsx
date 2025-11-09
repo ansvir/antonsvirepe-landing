@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import HowWeWork from './components/HowWeWork'; // Renamed from Services
 import Expertise from './components/Expertise';
-import Process from './components/Process';
+// import Process from './components/Process'; // Removed
 import CTA from './components/CTA';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -22,7 +22,7 @@ export default function App() {
             <HowWeWork t={t}/> {/* Renamed from Services */}
             <Portfolio t={t}/>
             <Expertise t={t}/>
-            <Process t={t}/>
+            {/* <Process t={t}/> */} {/* Removed */}
             <CTA t={t}/>
             <Contact t={t}/>
             <Footer language={language}/>

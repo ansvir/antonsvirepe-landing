@@ -6,7 +6,6 @@ export const translations: Record<'en' | 'ru', Translation> = {
       home: 'Home',
       howWeWork: 'How We Work', // Renamed from services
       expertise: 'Expertise',
-      process: 'Process',
       contact: 'Contact',
     },
     hero: {
@@ -54,6 +53,27 @@ export const translations: Record<'en' | 'ru', Translation> = {
           },
         ],
       },
+      benefits: { // Moved from top-level 'benefits'
+        title: 'Why Choose Me',
+        items: [
+          {
+            title: 'Business-First Approach',
+            description: 'I focus on understanding your business goals, not just technical requirements.',
+          },
+          {
+            title: 'Proven Track Record',
+            description: 'Years of experience delivering automation solutions that generate measurable ROI.',
+          },
+          {
+            title: 'End-to-End Solutions',
+            description: 'From consultation to deployment and support, I handle every aspect of your project.',
+          },
+          {
+            title: 'Transparent Communication',
+            description: 'Regular updates, clear documentation, and honest timelines throughout the project.',
+          },
+        ],
+      },
     },
     portfolio: {
       title: "Portfolio",
@@ -92,53 +112,7 @@ export const translations: Record<'en' | 'ru', Translation> = {
         'Zapier, Make, n8n',
       ],
     },
-    process: {
-      title: 'How I Work',
-      subtitle: 'A proven methodology that delivers results',
-      steps: [
-        {
-          title: 'Discovery & Analysis',
-          description: 'I analyze your current processes, identify bottlenecks, and uncover automation opportunities.',
-        },
-        {
-          title: 'Strategy & Planning',
-          description: 'I develop a detailed implementation plan with clear milestones, timelines, and expected outcomes.',
-        },
-        {
-          title: 'Development & Integration',
-          description: 'I build and integrate solutions using best practices, ensuring quality and reliability.',
-        },
-        {
-          title: 'Testing & Deployment',
-          description: 'I thoroughly test all systems and deploy them with minimal disruption to your operations.',
-        },
-        {
-          title: 'Training & Support',
-          description: 'I provide documentation, training, and ongoing support to ensure smooth adoption.',
-        },
-      ],
-    },
-    benefits: {
-      title: 'Why Choose Me',
-      items: [
-        {
-          title: 'Business-First Approach',
-          description: 'I focus on understanding your business goals, not just technical requirements.',
-        },
-        {
-          title: 'Proven Track Record',
-          description: 'Years of experience delivering automation solutions that generate measurable ROI.',
-        },
-        {
-          title: 'End-to-End Solutions',
-          description: 'From consultation to deployment and support, I handle every aspect of your project.',
-        },
-        {
-          title: 'Transparent Communication',
-          description: 'Regular updates, clear documentation, and honest timelines throughout the project.',
-        },
-      ],
-    },
+    // Removed 'process' section
     cta: {
       title: 'Ready to Automate Your Business?',
       subtitle: 'Let\'s discuss how automation can transform your operations and drive growth.',
@@ -162,7 +136,6 @@ export const translations: Record<'en' | 'ru', Translation> = {
       home: 'Главная',
       howWeWork: 'Как мы работаем', // Renamed from services
       expertise: 'Экспертиза',
-      process: 'Процесс',
       contact: 'Контакты',
     },
     hero: {
@@ -210,6 +183,27 @@ export const translations: Record<'en' | 'ru', Translation> = {
           },
         ],
       },
+      benefits: { // Moved from top-level 'benefits'
+        title: 'Почему выбирают меня',
+        items: [
+          {
+            title: 'Бизнес-ориентированный подход',
+            description: 'Я фокусируюсь на понимании ваших бизнес-целей, а не только технических требований.',
+          },
+          {
+            title: 'Проверенный опыт',
+            description: 'Годы опыта в предоставлении решений автоматизации, которые приносят измеримую рентабельность инвестиций.',
+          },
+          {
+            title: 'Комплексные решения',
+            description: 'От консультации до развертывания и поддержки, я обрабатываю каждый аспект вашего проекта.',
+          },
+          {
+            title: 'Прозрачная коммуникация',
+            description: 'Регулярные обновления, четкая документация и честные сроки на протяжении всего проекта.',
+          },
+        ],
+      },
     },
     portfolio: {
       title: "Портфолио",
@@ -248,53 +242,7 @@ export const translations: Record<'en' | 'ru', Translation> = {
         'Zapier, Make, n8n',
       ],
     },
-    process: {
-      title: 'Как я работаю',
-      subtitle: 'Проверенная методология, которая приносит результаты',
-      steps: [
-        {
-          title: 'Анализ и исследование',
-          description: 'Я анализирую текущие процессы, выявляю узкие места и обнаруживаю возможности для автоматизации.',
-        },
-        {
-          title: 'Стратегия и планирование',
-          description: 'Я разрабатываю детальный план реализации с четкими этапами, сроками и ожидаемыми результатами.',
-        },
-        {
-          title: 'Разработка и интеграция',
-          description: 'Я создаю и интегрирую решения, используя лучшие практики, обеспечивая качество и надежность.',
-        },
-        {
-          title: 'Тестирование и развертывание',
-          description: 'Я тщательно тестирую все системы и развертываю их с минимальными нарушениями для ваших операций.',
-        },
-        {
-          title: 'Обучение и поддержка',
-          description: 'Я предоставляю документацию, обучение и постоянную поддержку для обеспечения плавного внедрения.',
-        },
-      ],
-    },
-    benefits: {
-      title: 'Почему выбирают меня',
-      items: [
-        {
-          title: 'Бизнес-ориентированный подход',
-          description: 'Я фокусируюсь на понимании ваших бизнес-целей, а не только технических требований.',
-        },
-        {
-          title: 'Проверенный опыт',
-          description: 'Годы опыта в предоставлении решений автоматизации, которые приносят измеримую рентабельность инвестиций.',
-        },
-        {
-          title: 'Комплексные решения',
-          description: 'От консультации до развертывания и поддержки, я обрабатываю каждый аспект вашего проекта.',
-        },
-        {
-          title: 'Прозрачная коммуникация',
-          description: 'Регулярные обновления, четкая документация и честные сроки на протяжении всего проекта.',
-        },
-      ],
-    },
+    // Removed 'process' section
     cta: {
       title: 'Готовы автоматизировать ваш бизнес?',
       subtitle: 'Давайте обсудим, как автоматизация может трансформировать ваши операции и стимулировать рост.',

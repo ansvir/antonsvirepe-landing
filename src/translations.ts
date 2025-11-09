@@ -112,23 +112,68 @@ export const translations: Record<'en' | 'ru', Translation> = {
         'Zapier, Make, n8n',
       ],
     },
-    // Removed 'process' section
     cta: {
       title: 'Ready to Automate Your Business?',
       subtitle: 'Let\'s discuss how automation can transform your operations and drive growth.',
       button: 'Schedule a Consultation',
     },
-    contact: {
-      title: 'Get in Touch',
-      subtitle: 'Tell me about your project and let\'s explore how I can help',
-      form: {
+    quiz: {
+      title: 'Find Your Automation Potential',
+      subtitle: 'Answer a few quick questions to get a personalized audit result.',
+      questions: [
+        {
+          id: 'q1',
+          question: 'Which area of your business requires the most optimization?',
+          options: [
+            { value: 'sales', label: 'Sales', icon: '📈' },
+            { value: 'marketing', label: 'Marketing', icon: '📣' },
+            { value: 'operations', label: 'Operations', icon: '⚙️' },
+            { value: 'finance', label: 'Finance', icon: '💰' },
+          ],
+        },
+        {
+          id: 'q2',
+          question: 'How much time per day do you spend on routine, repetitive tasks?',
+          options: [
+            { value: 'less_1_hour', label: 'Less than 1 hour', icon: '⏱️' },
+            { value: '1_3_hours', label: '1-3 hours', icon: '⏳' },
+            { value: 'more_3_hours', label: 'More than 3 hours', icon: ' overworked' },
+          ],
+        },
+        {
+          id: 'q3',
+          question: 'What is the main problem you want to solve with automation?',
+          options: [
+            { value: 'cost_reduction', label: 'Cost Reduction', icon: '📉' },
+            { value: 'efficiency_increase', label: 'Efficiency Increase', icon: '🚀' },
+            { value: 'customer_service', label: 'Improve Customer Service', icon: '💖' },
+            { value: 'business_scaling', label: 'Business Scaling', icon: '📈' },
+          ],
+        },
+        {
+          id: 'q4',
+          question: 'How familiar are you with business process automation concepts?',
+          options: [
+            { value: 'not_familiar', label: 'Not familiar at all', icon: '🤷' },
+            { value: 'somewhat_familiar', label: 'Somewhat familiar', icon: '🤔' },
+            { value: 'well_versed', label: 'Well-versed', icon: '✨' },
+            { value: 'expert', label: 'Expert', icon: '🧠' },
+          ],
+        },
+      ],
+      finalStep: {
+        title: 'Where should we send your audit results?',
+        subtitle: 'Provide your contact details, and we\'ll send a personalized report based on your answers.',
         name: 'Your Name',
         email: 'Email Address',
-        company: 'Company Name',
-        message: 'Tell me about your project',
-        submit: 'Send Message',
-        success: 'Thank you! I\'ll get back to you within 24 hours.',
+        company: 'Company Name (Optional)',
+        submit: 'Get My Audit Results',
+        privacy: 'Your information will not be shared with third parties.',
+        success: 'Thank you! Your audit results will be sent to your email shortly.',
+        error: 'Failed to submit your quiz. Please try again.',
       },
+      nextButton: 'Next',
+      backButton: 'Back',
     },
   },
   ru: {
@@ -242,23 +287,68 @@ export const translations: Record<'en' | 'ru', Translation> = {
         'Zapier, Make, n8n',
       ],
     },
-    // Removed 'process' section
     cta: {
       title: 'Готовы автоматизировать ваш бизнес?',
       subtitle: 'Давайте обсудим, как автоматизация может трансформировать ваши операции и стимулировать рост.',
       button: 'Запланировать консультацию',
     },
-    contact: {
-      title: 'Свяжитесь со мной',
-      subtitle: 'Расскажите о вашем проекте, и давайте обсудим, как я могу помочь',
-      form: {
+    quiz: {
+      title: 'Определите свой потенциал автоматизации',
+      subtitle: 'Ответьте на несколько быстрых вопросов, чтобы получить персонализированный результат аудита.',
+      questions: [
+        {
+          id: 'q1',
+          question: 'Какая область вашего бизнеса требует наибольшей оптимизации?',
+          options: [
+            { value: 'sales', label: 'Продажи', icon: '📈' },
+            { value: 'marketing', label: 'Маркетинг', icon: '📣' },
+            { value: 'operations', label: 'Операции', icon: '⚙️' },
+            { value: 'finance', label: 'Финансы', icon: '💰' },
+          ],
+        },
+        {
+          id: 'q2',
+          question: 'Сколько времени в день вы тратите на рутинные, повторяющиеся задачи?',
+          options: [
+            { value: 'less_1_hour', label: 'Менее 1 часа', icon: '⏱️' },
+            { value: '1_3_hours', label: '1-3 часа', icon: '⏳' },
+            { value: 'more_3_hours', label: 'Более 3 часов', icon: ' overworked' },
+          ],
+        },
+        {
+          id: 'q3',
+          question: 'Какую главную проблему вы хотите решить с помощью автоматизации?',
+          options: [
+            { value: 'cost_reduction', label: 'Снижение затрат', icon: '📉' },
+            { value: 'efficiency_increase', label: 'Повышение эффективности', icon: '🚀' },
+            { value: 'customer_service', label: 'Улучшение качества обслуживания клиентов', icon: '💖' },
+            { value: 'business_scaling', label: 'Масштабирование бизнеса', icon: '📈' },
+          ],
+        },
+        {
+          id: 'q4',
+          question: 'Насколько вы знакомы с концепциями автоматизации бизнес-процессов?',
+          options: [
+            { value: 'not_familiar', label: 'Совсем не знаком', icon: '🤷' },
+            { value: 'somewhat_familiar', label: 'Немного знаю', icon: '🤔' },
+            { value: 'well_versed', label: 'Хорошо разбираюсь', icon: '✨' },
+            { value: 'expert', label: 'Эксперт', icon: '🧠' },
+          ],
+        },
+      ],
+      finalStep: {
+        title: 'Куда прислать результаты аудита?',
+        subtitle: 'Укажите свои контактные данные, и мы отправим персонализированный отчет на основе ваших ответов.',
         name: 'Ваше имя',
         email: 'Email адрес',
-        company: 'Название компании',
-        message: 'Расскажите о вашем проекте',
-        submit: 'Отправить сообщение',
-        success: 'Спасибо! Я свяжусь с вами в течение 24 часов.',
+        company: 'Название компании (Необязательно)',
+        submit: 'Получить результаты аудита',
+        privacy: 'Ваша информация не передается третьим лицам.',
+        success: 'Спасибо! Результаты вашего аудита будут отправлены на вашу электронную почту в ближайшее время.',
+        error: 'Не удалось отправить квиз. Пожалуйста, попробуйте еще раз.',
       },
+      nextButton: 'Далее',
+      backButton: 'Назад',
     },
   },
 };

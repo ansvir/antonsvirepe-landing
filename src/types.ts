@@ -3,9 +3,9 @@ export type Language = 'en' | 'ru';
 export interface Translation {
   nav: {
     home: string;
-    howWeWork: string; // Renamed from services
+    howWeWork: string;
     expertise: string;
-    contact: string;
+    contact: string; // Still 'contact' for navigation, but will point to quiz
   };
   hero: {
     greeting: string;
@@ -19,16 +19,16 @@ export interface Translation {
     satisfaction: string;
     efficiency: string;
   };
-  howWeWork: { // Renamed from services
+  howWeWork: {
     title: string;
     subtitle: string;
     automationExample: {
       title: string;
-      problemTitle: string; // New
+      problemTitle: string;
       problem: string;
-      solutionTitle: string; // New
+      solutionTitle: string;
       solution: string;
-      benefitsTitle: string; // New
+      benefitsTitle: string;
       benefits: string;
     };
     timeline: {
@@ -38,7 +38,7 @@ export interface Translation {
         description: string;
       }[];
     };
-    benefits: { // Moved from top-level 'benefits'
+    benefits: {
       title: string;
       items: {
         title: string;
@@ -60,22 +60,31 @@ export interface Translation {
     subtitle: string;
     areas: string[];
   };
-  // Removed 'process' type
   cta: {
     title: string;
     subtitle: string;
     button: string;
   };
-  contact: {
+  quiz: { // New quiz structure
     title: string;
     subtitle: string;
-    form: {
+    questions: {
+      id: string;
+      question: string;
+      options: { value: string; label: string; icon?: string }[];
+    }[];
+    finalStep: {
+      title: string;
+      subtitle: string;
       name: string;
       email: string;
       company: string;
-      message: string;
       submit: string;
+      privacy: string;
       success: string;
+      error: string;
     };
+    nextButton: string;
+    backButton: string;
   };
 }

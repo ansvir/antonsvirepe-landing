@@ -102,7 +102,7 @@ export default function Quiz({ t }: QuizProps) {
         {questionData.options.map((option) => (
           <div
             key={option.value}
-            className="flex items-center space-x-3 p-4 border border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 transition-colors has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50"
+            className="flex items-center space-x-3 p-4 border border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 transition-colors has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50 has-[:checked]:shadow-md has-[:checked]:ring-2 has-[:checked]:ring-blue-500"
           >
             <RadioGroupItem value={option.value} id={`${questionData.id}-${option.value}`} className="sr-only" />
             <Label

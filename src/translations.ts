@@ -14,7 +14,7 @@ export const translations: Record<'en' | 'ru', Translation> = {
       title: 'Transform Your Business with Smart IT Solutions',
       subtitle: 'I help companies streamline operations, eliminate manual tasks, and boost efficiency through custom automation and integration solutions.',
       cta: 'Start Your Project',
-      ctaSecondary: 'View Services',
+      ctaSecondary: 'View Portfolio', // Updated
     },
     stats: {
       projects: 'Projects Delivered',
@@ -26,8 +26,11 @@ export const translations: Record<'en' | 'ru', Translation> = {
       subtitle: 'Streamlining your operations with tailored automation solutions',
       automationExample: {
         title: 'Automation Example: Travel Agency Booking',
+        problemTitle: 'Problem:', // New
         problem: 'A travel agency manually processes flight and hotel bookings, creates itineraries, and handles customer communication. This leads to slow response times, errors, and agents spending hours on repetitive data entry.',
+        solutionTitle: 'Solution:', // New
         solution: 'An automated system integrates with airline and hotel APIs. When a customer requests a trip, the system automatically searches for options, generates a preliminary itinerary, and sends it for agent review. Once approved, it can auto-book and send confirmations. Automated email/SMS updates keep customers informed about booking confirmations, flight changes, and pre-trip reminders.',
+        benefitsTitle: 'Benefits & Growth:', // New
         benefits: 'Agents save hours daily, focusing on complex requests and customer relationships. Reduced human error increases accuracy. Faster responses and proactive updates boost customer satisfaction. The agency can handle more bookings without proportional cost increases, leading to significant business growth and scalability.',
       },
       timeline: {
@@ -167,7 +170,7 @@ export const translations: Record<'en' | 'ru', Translation> = {
       title: 'Трансформируйте ваш бизнес с помощью умных IT решений',
       subtitle: 'Я помогаю компаниям оптимизировать операции, устранить ручные задачи и повысить эффективность через индивидуальные решения автоматизации и интеграции.',
       cta: 'Начать проект',
-      ctaSecondary: 'Услуги',
+      ctaSecondary: 'Портфолио', // Updated
     },
     stats: {
       projects: 'Реализованных проектов',
@@ -179,8 +182,11 @@ export const translations: Record<'en' | 'ru', Translation> = {
       subtitle: 'Оптимизация ваших операций с помощью индивидуальных решений по автоматизации',
       automationExample: {
         title: 'Пример автоматизации: Бронирование в туристическом агентстве',
+        problemTitle: 'Проблема:', // New
         problem: 'Туристическое агентство вручную обрабатывает бронирования авиабилетов и отелей, создает маршруты и ведет общение с клиентами. Это приводит к медленному времени ответа, ошибкам и трате часов агентов на повторяющийся ввод данных.',
+        solutionTitle: 'Решение:', // New
         solution: 'Автоматизированная система интегрируется с API авиакомпаний и отелей. Когда клиент запрашивает поездку, система автоматически ищет варианты, генерирует предварительный маршрут и отправляет его на проверку агенту. После одобрения она может автоматически бронировать и отправлять подтверждения. Автоматические уведомления по электронной почте/SMS информируют клиентов о подтверждениях бронирования, изменениях рейсов и напоминаниях перед поездкой.',
+        benefitsTitle: 'Преимущества и рост:', // New
         benefits: 'Агенты экономят часы ежедневно, фокусируясь на сложных запросах и отношениях с клиентами. Снижение человеческих ошибок повышает точность. Более быстрые ответы и проактивные обновления повышают удовлетворенность клиентов. Агентство может обрабатывать больше бронирований без пропорционального увеличения затрат, что приводит к значительному росту бизнеса и масштабируемости.',
       },
       timeline: {

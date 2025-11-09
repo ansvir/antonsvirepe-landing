@@ -30,15 +30,15 @@ export default function HowWeWork({ t }: HowWeWorkProps) {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 text-lg text-gray-700">
             <div>
-              <h4 className="font-semibold text-xl text-blue-700 mb-3">Problem:</h4>
+              <h4 className="font-semibold text-xl text-blue-700 mb-3">{t.howWeWork.automationExample.problemTitle}</h4>
               <p>{t.howWeWork.automationExample.problem}</p>
             </div>
             <div>
-              <h4 className="font-semibold text-xl text-blue-700 mb-3">Solution:</h4>
+              <h4 className="font-semibold text-xl text-blue-700 mb-3">{t.howWeWork.automationExample.solutionTitle}</h4>
               <p>{t.howWeWork.automationExample.solution}</p>
             </div>
             <div>
-              <h4 className="font-semibold text-xl text-blue-700 mb-3">Benefits & Growth:</h4>
+              <h4 className="font-semibold text-xl text-blue-700 mb-3">{t.howWeWork.automationExample.benefitsTitle}</h4>
               <p>{t.howWeWork.automationExample.benefits}</p>
             </div>
           </div>

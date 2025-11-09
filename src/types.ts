@@ -25,8 +25,11 @@ export interface Translation {
     subtitle: string;
     automationExample: {
       title: string;
+      problemTitle: string; // New
       problem: string;
+      solutionTitle: string; // New
       solution: string;
+      benefitsTitle: string; // New
       benefits: string;
     };
     timeline: {

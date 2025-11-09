@@ -10,8 +10,8 @@ export default function Hero({ t }: HeroProps) {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const scrollToServices = () => {
-    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToPortfolio = () => { // Renamed function
+    document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }); // Scrolls to portfolio
   };
 
   return (
@@ -40,7 +40,7 @@ export default function Hero({ t }: HeroProps) {
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             <button
-              onClick={scrollToServices}
+              onClick={scrollToPortfolio} // Updated function call
               className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-50 transition-colors border-2 border-blue-600 font-semibold text-lg"
             >
               {t.hero.ctaSecondary}

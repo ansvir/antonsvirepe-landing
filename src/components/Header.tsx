@@ -31,8 +31,8 @@ export default function Header({ t, language, onLanguageChange }: HeaderProps) {
             <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               {t.nav.home}
             </button>
-            <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-              {t.nav.services}
+            <button onClick={() => scrollToSection('how-we-work')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              {t.nav.howWeWork} {/* Updated from services */}
             </button>
             <button onClick={() => scrollToSection('expertise')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               {t.nav.expertise}
@@ -77,8 +77,8 @@ export default function Header({ t, language, onLanguageChange }: HeaderProps) {
               <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-blue-600 transition-colors text-left font-medium">
                 {t.nav.home}
               </button>
-              <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-blue-600 transition-colors text-left font-medium">
-                {t.nav.services}
+              <button onClick={() => scrollToSection('how-we-work')} className="text-gray-700 hover:text-blue-600 transition-colors text-left font-medium">
+                {t.nav.howWeWork} {/* Updated from services */}
               </button>
               <button onClick={() => scrollToSection('expertise')} className="text-gray-700 hover:text-blue-600 transition-colors text-left font-medium">
                 {t.nav.expertise}

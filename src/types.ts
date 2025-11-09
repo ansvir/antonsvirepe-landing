@@ -3,7 +3,7 @@ export type Language = 'en' | 'ru';
 export interface Translation {
   nav: {
     home: string;
-    services: string;
+    howWeWork: string; // Renamed from services
     expertise: string;
     process: string;
     contact: string;
@@ -20,13 +20,22 @@ export interface Translation {
     satisfaction: string;
     efficiency: string;
   };
-  services: {
+  howWeWork: { // Renamed from services
     title: string;
     subtitle: string;
-    items: {
+    automationExample: {
       title: string;
-      description: string;
-    }[];
+      problem: string;
+      solution: string;
+      benefits: string;
+    };
+    timeline: {
+      title: string;
+      steps: {
+        title: string;
+        description: string;
+      }[];
+    };
   };
   portfolio: {
     title: string;

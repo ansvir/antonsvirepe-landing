@@ -4,7 +4,7 @@ export const translations: Record<'en' | 'ru', Translation> = {
   en: {
     nav: {
       home: 'Home',
-      services: 'Services',
+      howWeWork: 'How We Work', // Renamed from services
       expertise: 'Expertise',
       process: 'Process',
       contact: 'Contact',
@@ -21,35 +21,36 @@ export const translations: Record<'en' | 'ru', Translation> = {
       satisfaction: 'Client Satisfaction',
       efficiency: 'Average Efficiency Gain',
     },
-    services: {
-      title: 'Services That Drive Results',
-      subtitle: 'Comprehensive automation solutions tailored to your business needs',
-      items: [
-        {
-          title: 'Process Automation',
-          description: 'Automate repetitive tasks, workflows, and data processing to free up your team for strategic work.',
-        },
-        {
-          title: 'System Integration',
-          description: 'Connect disparate systems and tools to create seamless data flow across your organization.',
-        },
-        {
-          title: 'Custom Software Development',
-          description: 'Build tailored solutions that address your unique business challenges and requirements.',
-        },
-        {
-          title: 'API Development & Integration',
-          description: 'Create and integrate APIs to enable communication between your business applications.',
-        },
-        {
-          title: 'Database Optimization',
-          description: 'Design and optimize databases for better performance, scalability, and data integrity.',
-        },
-        {
-          title: 'Legacy System Modernization',
-          description: 'Upgrade outdated systems with modern technologies to improve efficiency and reduce costs.',
-        },
-      ],
+    howWeWork: { // Renamed from services
+      title: 'How We Work to Drive Your Success',
+      subtitle: 'Streamlining your operations with tailored automation solutions',
+      automationExample: {
+        title: 'Automation Example: Travel Agency Booking',
+        problem: 'A travel agency manually processes flight and hotel bookings, creates itineraries, and handles customer communication. This leads to slow response times, errors, and agents spending hours on repetitive data entry.',
+        solution: 'An automated system integrates with airline and hotel APIs. When a customer requests a trip, the system automatically searches for options, generates a preliminary itinerary, and sends it for agent review. Once approved, it can auto-book and send confirmations. Automated email/SMS updates keep customers informed about booking confirmations, flight changes, and pre-trip reminders.',
+        benefits: 'Agents save hours daily, focusing on complex requests and customer relationships. Reduced human error increases accuracy. Faster responses and proactive updates boost customer satisfaction. The agency can handle more bookings without proportional cost increases, leading to significant business growth and scalability.',
+      },
+      timeline: {
+        title: 'Our Integration Process',
+        steps: [
+          {
+            title: 'Free Audit of Business Processes',
+            description: 'We start with a comprehensive analysis of your current workflows to identify bottlenecks and automation opportunities.',
+          },
+          {
+            title: 'Building a Solution Design',
+            description: 'Based on the audit, we craft a detailed solution design, outlining the architecture, technologies, and implementation plan.',
+          },
+          {
+            title: 'Integrating Solution to Business',
+            description: 'Our team develops and seamlessly integrates the custom automation solution into your existing business environment.',
+          },
+          {
+            title: 'Business Growth & Reduced Costs',
+            description: 'Post-integration, you\'ll experience enhanced efficiency, reduced operational costs, and a clear path to sustainable business growth.',
+          },
+        ],
+      },
     },
     portfolio: {
       title: "Portfolio",
@@ -156,7 +157,7 @@ export const translations: Record<'en' | 'ru', Translation> = {
   ru: {
     nav: {
       home: 'Главная',
-      services: 'Услуги',
+      howWeWork: 'Как мы работаем', // Renamed from services
       expertise: 'Экспертиза',
       process: 'Процесс',
       contact: 'Контакты',
@@ -173,35 +174,36 @@ export const translations: Record<'en' | 'ru', Translation> = {
       satisfaction: 'Удовлетворенность клиентов',
       efficiency: 'Средний прирост эффективности',
     },
-    services: {
-      title: 'Услуги, которые приносят результат',
-      subtitle: 'Комплексные решения автоматизации, адаптированные под ваши бизнес-потребности',
-      items: [
-        {
-          title: 'Автоматизация процессов',
-          description: 'Автоматизация повторяющихся задач, рабочих процессов и обработки данных, освобождая команду для стратегической работы.',
-        },
-        {
-          title: 'Интеграция систем',
-          description: 'Соединение разрозненных систем и инструментов для создания беспрепятственного потока данных в организации.',
-        },
-        {
-          title: 'Разработка под заказ',
-          description: 'Создание индивидуальных решений, которые отвечают вашим уникальным бизнес-вызовам и требованиям.',
-        },
-        {
-          title: 'Разработка и интеграция API',
-          description: 'Создание и интеграция API для обеспечения взаимодействия между бизнес-приложениями.',
-        },
-        {
-          title: 'Оптимизация баз данных',
-          description: 'Проектирование и оптимизация баз данных для улучшения производительности, масштабируемости и целостности данных.',
-        },
-        {
-          title: 'Модернизация устаревших систем',
-          description: 'Обновление устаревших систем современными технологиями для повышения эффективности и снижения затрат.',
-        },
-      ],
+    howWeWork: { // Renamed from services
+      title: 'Как мы работаем для вашего успеха',
+      subtitle: 'Оптимизация ваших операций с помощью индивидуальных решений по автоматизации',
+      automationExample: {
+        title: 'Пример автоматизации: Бронирование в туристическом агентстве',
+        problem: 'Туристическое агентство вручную обрабатывает бронирования авиабилетов и отелей, создает маршруты и ведет общение с клиентами. Это приводит к медленному времени ответа, ошибкам и трате часов агентов на повторяющийся ввод данных.',
+        solution: 'Автоматизированная система интегрируется с API авиакомпаний и отелей. Когда клиент запрашивает поездку, система автоматически ищет варианты, генерирует предварительный маршрут и отправляет его на проверку агенту. После одобрения она может автоматически бронировать и отправлять подтверждения. Автоматические уведомления по электронной почте/SMS информируют клиентов о подтверждениях бронирования, изменениях рейсов и напоминаниях перед поездкой.',
+        benefits: 'Агенты экономят часы ежедневно, фокусируясь на сложных запросах и отношениях с клиентами. Снижение человеческих ошибок повышает точность. Более быстрые ответы и проактивные обновления повышают удовлетворенность клиентов. Агентство может обрабатывать больше бронирований без пропорционального увеличения затрат, что приводит к значительному росту бизнеса и масштабируемости.',
+      },
+      timeline: {
+        title: 'Наш процесс интеграции',
+        steps: [
+          {
+            title: 'Бесплатный аудит бизнес-процессов',
+            description: 'Мы начинаем с всестороннего анализа ваших текущих рабочих процессов для выявления узких мест и возможностей для автоматизации.',
+          },
+          {
+            title: 'Разработка дизайна решения',
+            description: 'На основе аудита мы разрабатываем детальный дизайн решения, описывающий архитектуру, технологии и план реализации.',
+          },
+          {
+            title: 'Интеграция решения в бизнес',
+            description: 'Наша команда разрабатывает и бесшовно интегрирует индивидуальное решение по автоматизации в вашу существующую бизнес-среду.',
+          },
+          {
+            title: 'Рост бизнеса и снижение затрат',
+            description: 'После интеграции вы ощутите повышенную эффективность, сокращение операционных расходов и четкий путь к устойчивому росту бизнеса.',
+          },
+        ],
+      },
     },
     portfolio: {
       title: "Портфолио",

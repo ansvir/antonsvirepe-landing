@@ -4,10 +4,10 @@ import React, { useState } from 'react';
 import { CheckCircle, Send, ArrowLeft, ArrowRight } from 'lucide-react';
 import { Translation } from '../types';
 import { supabase } from '../lib/supabase';
-import { Button } from './ui/button.tsx'; // Corrected import path
-import { Input } from './ui/input.tsx';   // Corrected import path
-import { Label } from './ui/label.tsx';   // Corrected import path
-import { RadioGroup, RadioGroupItem } from './ui/radio-group.tsx'; // Corrected import path
+import { Button } from './ui/button.tsx';
+import { Input } from './ui/input.tsx';
+import { Label } from './ui/label.tsx';
+import { RadioGroup, RadioGroupItem } from './ui/radio-group.tsx';
 import toast from 'react-hot-toast';
 
 interface QuizProps {
@@ -184,6 +184,8 @@ export default function Quiz({ t }: QuizProps) {
     </form>
   );
 
+  const isCurrentQuestionAnswered = currentStep < totalQuestions && answers[t.quiz.questions[currentStep]?.id];
+
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -223,6 +225,7 @@ export default function Quiz({ t }: QuizProps) {
               {currentStep < totalQuestions && (
                 <Button
                   onClick={handleNext}
+                  disabled={!isCurrentQuestionAnswered}
                   className="ml-auto flex items-center space-x-2"
                 >
                   <span>{t.quiz.nextButton}</span>

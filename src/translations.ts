@@ -115,7 +115,7 @@ export const translations: Record<'en' | 'ru', Translation> = {
     cta: {
       title: 'Ready to Automate Your Business?',
       subtitle: 'Let\'s discuss how automation can transform your operations and drive growth.',
-      button: 'Schedule a Consultation',
+      button: 'Try Quick Audit',
     },
     quiz: {
       title: 'Find Your Automation Potential',
@@ -137,7 +137,7 @@ export const translations: Record<'en' | 'ru', Translation> = {
           options: [
             { value: 'less_1_hour', label: 'Less than 1 hour', icon: '⏱️' },
             { value: '1_3_hours', label: '1-3 hours', icon: '⏳' },
-            { value: 'more_3_hours', label: 'More than 3 hours', icon: ' overworked' },
+            { value: 'more_3_hours', label: 'More than 3 hours', icon: '😵' },
           ],
         },
         {
@@ -290,7 +290,7 @@ export const translations: Record<'en' | 'ru', Translation> = {
     cta: {
       title: 'Готовы автоматизировать ваш бизнес?',
       subtitle: 'Давайте обсудим, как автоматизация может трансформировать ваши операции и стимулировать рост.',
-      button: 'Запланировать консультацию',
+      button: 'Попробовать быстрый аудит',
     },
     quiz: {
       title: 'Определите свой потенциал автоматизации',
@@ -312,7 +312,7 @@ export const translations: Record<'en' | 'ru', Translation> = {
           options: [
             { value: 'less_1_hour', label: 'Менее 1 часа', icon: '⏱️' },
             { value: '1_3_hours', label: '1-3 часа', icon: '⏳' },
-            { value: 'more_3_hours', label: 'Более 3 часов', icon: ' overworked' },
+            { value: 'more_3_hours', label: 'Более 3 часов', icon: '😵' },
           ],
         },
         {

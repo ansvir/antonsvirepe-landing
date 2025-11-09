@@ -4,11 +4,11 @@ import React, { useState } from 'react';
 import { CheckCircle, Send, ArrowLeft, ArrowRight } from 'lucide-react';
 import { Translation } from '../types';
 import { supabase } from '../lib/supabase';
-import { Button } from './ui/button';
-import { Input } from './ui/input';
-import { Label } from './ui/label';
-import { RadioGroup, RadioGroupItem } from './ui/radio-group';
-import toast from 'react-hot-toast'; // Assuming react-hot-toast is available or will be added
+import { Button } from './ui/button.tsx'; // Corrected import path
+import { Input } from './ui/input.tsx';   // Corrected import path
+import { Label } from './ui/label.tsx';   // Corrected import path
+import { RadioGroup, RadioGroupItem } from './ui/radio-group.tsx'; // Corrected import path
+import toast from 'react-hot-toast';
 
 interface QuizProps {
   t: Translation;

@@ -87,4 +87,7 @@ export interface Translation {
     nextButton: string;
     backButton: string;
   };
+  footer: { // New footer section
+    legalInfo: string;
+  };
 }

@@ -12,7 +12,7 @@ import Quiz from './components/Quiz';
 import Seo from './components/Seo'; // Import Seo component
 
 export default function App() {
-    const [language, setLanguage] = useState<Language>('en');
+    const [language, setLanguage] = useState<Language>('ru'); // Changed default language to 'ru'
     const t = translations[language];
 
     return (
@@ -29,7 +29,7 @@ export default function App() {
             <Expertise t={t}/>
             <CTA t={t}/>
             <Quiz t={t}/>
-            <Footer language={language}/>
+            <Footer language={language} t={t}/> {/* Pass translation object to Footer */}
         </div>
     );
 }

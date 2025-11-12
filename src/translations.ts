@@ -175,6 +175,9 @@ export const translations: Record<'en' | 'ru', Translation> = {
       nextButton: 'Next',
       backButton: 'Back',
     },
+    footer: { // New footer section
+      legalInfo: 'Self-employed Svirepa Anton Alexandrovich UNP AE5295056',
+    },
   },
   ru: {
     nav: {
@@ -349,6 +352,9 @@ export const translations: Record<'en' | 'ru', Translation> = {
       },
       nextButton: 'Далее',
       backButton: 'Назад',
+    },
+    footer: { // New footer section
+      legalInfo: 'Самозанятый Свирепа Антон Александрович УНП AE5295056',
     },
   },
 };

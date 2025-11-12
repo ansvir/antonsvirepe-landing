@@ -74,6 +74,31 @@ export const translations: Record<'en' | 'ru', Translation> = {
           },
         ],
       },
+      serviceDetails: { // New section for service details
+        title: 'Service Details',
+        items: [
+          {
+            id: 'pricing',
+            title: 'Transparent Pricing',
+            description: 'My rate is 30 BYN per hour for any service, whether it\'s implementation, development from scratch, or comprehensive turnkey projects. This is an investment in your business\'s efficiency, where every hour of work is aimed at achieving measurable results and optimizing your processes.',
+          },
+          {
+            id: 'payment-support',
+            title: 'Payment and Support',
+            description: 'As I provide services, physical delivery is not applicable. However, upon project completion, I offer flexible product support terms, which are billed separately. This ensures the stable and uninterrupted operation of your solution.',
+          },
+          {
+            id: 'delivery-terms',
+            title: 'Implementation Timelines and Terms',
+            description: 'Project timelines are individual and depend on their complexity: from quick solutions in 3-4 days to large-scale systems requiring a year or more. The process begins with a detailed audit and approval of the technical specification (TS). After the TS is approved by both parties, we proceed with development. Revisions after TS approval are possible but will be charged additionally at a rate of 30 BYN per hour, ensuring flexibility and transparency.',
+          },
+          {
+            id: 'usage-storage',
+            title: 'Usage and Storage Specifics',
+            description: 'Since we are talking about services and software solutions, no special storage conditions are required. All developed products are handed over to you with full documentation and usage instructions, ensuring your complete autonomy and control.',
+          },
+        ],
+      },
     },
     portfolio: {
       title: "Portfolio",
@@ -249,6 +274,31 @@ export const translations: Record<'en' | 'ru', Translation> = {
           {
             title: 'Прозрачная коммуникация',
             description: 'Регулярные обновления, четкая документация и честные сроки на протяжении всего проекта.',
+          },
+        ],
+      },
+      serviceDetails: { // New section for service details
+        title: 'Детали услуг',
+        items: [
+          {
+            id: 'pricing',
+            title: 'Прозрачное ценообразование',
+            description: 'Моя ставка — 30 BYN в час за любые услуги, будь то внедрение, разработка с нуля или комплексные проекты «под ключ». Это инвестиция в эффективность вашего бизнеса, где каждый час работы направлен на достижение измеримых результатов и оптимизацию ваших процессов.',
+          },
+          {
+            id: 'payment-support',
+            title: 'Оплата и поддержка',
+            description: 'Поскольку я предоставляю услуги, физическая доставка не предусмотрена. Однако, после завершения проекта, я предлагаю гибкие условия поддержки продукта, которые оплачиваются отдельно. Это гарантирует стабильную и бесперебойную работу вашего решения.',
+          },
+          {
+            id: 'delivery-terms',
+            title: 'Сроки и условия реализации',
+            description: 'Сроки выполнения проектов индивидуальны и зависят от их сложности: от быстрых решений за 3-4 дня до масштабных систем, требующих года и более. Процесс начинается с детального аудита и согласования технического задания (ТЗ). После утверждения ТЗ обеими сторонами, мы приступаем к разработке. Внесение правок после утверждения ТЗ возможно, но оплачивается дополнительно по ставке 30 BYN в час, чтобы обеспечить гибкость и прозрачность.',
+          },
+          {
+            id: 'usage-storage',
+            title: 'Особенности использования и хранения',
+            description: 'Поскольку речь идет об услугах и программных решениях, особых условий хранения не требуется. Все разработанные продукты передаются вам с полной документацией и инструкциями по использованию, обеспечивая вашу полную автономность и контроль.',
           },
         ],
       },

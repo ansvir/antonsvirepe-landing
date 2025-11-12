@@ -1,5 +1,11 @@
 import { Search, Lightbulb, Wrench, TrendingUp, Rocket } from 'lucide-react';
 import { Translation } from '../types';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from './ui/accordion'; // Import Accordion components
 
 interface HowWeWorkProps {
   t: Translation;
@@ -90,13 +96,13 @@ export default function HowWeWork({ t }: HowWeWorkProps) {
           </div>
         </div>
 
-        {/* Moved Benefits Section */}
+        {/* Why Choose Me (Benefits) Section */}
         <div className="text-center mb-12">
           <h3 className="text-4xl font-bold text-gray-900 mb-4">
             {t.howWeWork.benefits.title}
           </h3>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20"> {/* Added mb-20 for spacing */}
           {t.howWeWork.benefits.items.map((benefit, index) => (
             <div
               key={index}
@@ -110,6 +116,27 @@ export default function HowWeWork({ t }: HowWeWorkProps) {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* New Service Details Section */}
+        <div className="text-center mb-12">
+          <h3 className="text-4xl font-bold text-gray-900 mb-4">
+            {t.howWeWork.serviceDetails.title}
+          </h3>
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <Accordion type="single" collapsible className="w-full">
+            {t.howWeWork.serviceDetails.items.map((item) => (
+              <AccordionItem key={item.id} value={item.id} className="border-b border-gray-200">
+                <AccordionTrigger className="text-xl font-semibold text-gray-800 hover:text-blue-600 transition-colors">
+                  {item.title}
+                </AccordionTrigger>
+                <AccordionContent className="text-lg text-gray-700 leading-relaxed p-4 bg-blue-50 rounded-b-lg">
+                  {item.description}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>

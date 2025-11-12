@@ -45,6 +45,14 @@ export interface Translation {
         description: string;
       }[];
     };
+    serviceDetails: { // New section for service details
+      title: string;
+      items: {
+        id: string;
+        title: string;
+        description: string;
+      }[];
+    };
   };
   portfolio: {
     title: string;

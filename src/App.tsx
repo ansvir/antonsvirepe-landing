@@ -9,10 +9,11 @@ import {translations} from './translations';
 import {Language} from './types';
 import Portfolio from "./components/Portfolio.tsx";
 import Quiz from './components/Quiz';
-import Seo from './components/Seo'; // Import Seo component
+import Seo from './components/Seo';
+import FadeInSection from './components/FadeInSection'; // Import FadeInSection
 
 export default function App() {
-    const [language, setLanguage] = useState<Language>('ru'); // Changed default language to 'ru'
+    const [language, setLanguage] = useState<Language>('ru');
     const t = translations[language];
 
     return (
@@ -20,16 +21,31 @@ export default function App() {
             <Seo
                 title={t.hero.title}
                 description={t.hero.subtitle}
-                // You can add more dynamic meta tags here based on the current language or page
             />
-            <Header t={t} language={language} onLanguageChange={setLanguage}/>
-            <Hero t={t}/>
-            <HowWeWork t={t}/>
-            <Portfolio t={t}/>
-            <Expertise t={t}/>
-            <CTA t={t}/>
-            <Quiz t={t}/>
-            <Footer language={language} t={t}/> {/* Pass translation object to Footer */}
+            <FadeInSection delay={100}> {/* Initial fade-in for Header */}
+                <Header t={t} language={language} onLanguageChange={setLanguage}/>
+            </FadeInSection>
+            <FadeInSection>
+                <Hero t={t}/>
+            </FadeInSection>
+            <FadeInSection>
+                <HowWeWork t={t}/>
+            </FadeInSection>
+            <FadeInSection>
+                <Portfolio t={t}/>
+            </FadeInSection>
+            <FadeInSection>
+                <Expertise t={t}/>
+            </FadeInSection>
+            <FadeInSection>
+                <CTA t={t}/>
+            </FadeInSection>
+            <FadeInSection>
+                <Quiz t={t}/>
+            </FadeInSection>
+            <FadeInSection>
+                <Footer language={language} t={t}/>
+            </FadeInSection>
         </div>
     );
 }

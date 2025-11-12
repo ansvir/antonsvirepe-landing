@@ -22,9 +22,9 @@ export default function App() {
                 title={t.hero.title}
                 description={t.hero.subtitle}
             />
-            <FadeInSection delay={100}> {/* Initial fade-in for Header */}
-                <Header t={t} language={language} onLanguageChange={setLanguage}/>
-            </FadeInSection>
+            {/* Header now handles its own fade-in */}
+            <Header t={t} language={language} onLanguageChange={setLanguage}/>
+            
             <FadeInSection>
                 <Hero t={t}/>
             </FadeInSection>

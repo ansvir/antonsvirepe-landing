@@ -1,5 +1,5 @@
 import { Menu, X, Globe } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Language, Translation } from '../types';
 
 interface HeaderProps {
@@ -10,6 +10,15 @@ interface HeaderProps {
 
 export default function Header({ t, language, onLanguageChange }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false); // New state for fade-in
+
+  useEffect(() => {
+    // Trigger fade-in after component mounts
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100); // Small delay to ensure CSS transition applies
+    return () => clearTimeout(timer);
+  }, []);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -18,7 +27,12 @@ export default function Header({ t, language, onLanguageChange }: HeaderProps) {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
+    <header
+      className={`fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50
+        transition-all duration-1000 ease-out ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full' // Fade in from top
+        }`}
+    >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">

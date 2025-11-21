@@ -14,6 +14,7 @@ export const translations: Record<'en' | 'ru', Translation> = {
       subtitle: 'I help companies streamline operations, eliminate manual tasks, and boost efficiency through custom automation and integration solutions.',
       cta: 'Start Your Project',
       ctaSecondary: 'View Portfolio', // Updated
+      projects: [ {title: "Customer Payments System"}, {title: "SMM Planner"}, {title: "Shoes Shop Website"}]
     },
     stats: {
       projects: 'Projects Delivered',
@@ -217,6 +218,7 @@ export const translations: Record<'en' | 'ru', Translation> = {
       subtitle: 'Я помогаю компаниям оптимизировать операции, устранить ручные задачи и повысить эффективность через индивидуальные решения автоматизации и интеграции.',
       cta: 'Начать проект',
       ctaSecondary: 'Портфолио', // Updated
+      projects: [ {title: "Система учета платежей"}, {title: "SMM Планировщик"}, {title: "Сайт для магазина обуви"}]
     },
     stats: {
       projects: 'Реализованных проектов',

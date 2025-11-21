@@ -13,6 +13,7 @@ export interface Translation {
     subtitle: string;
     cta: string;
     ctaSecondary: string;
+    projects: { title: string } []
   };
   stats: {
     projects: string;

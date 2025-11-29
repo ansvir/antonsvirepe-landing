@@ -142,6 +142,8 @@ export const translations: Record<'en' | 'ru', Translation> = {
       title: 'Ready to Automate Your Business?',
       subtitle: 'Let\'s discuss how automation can transform your operations and drive growth.',
       button: 'Try Quick Audit',
+      messageLabel: 'Message (Optional)',
+      requiredFieldsMessage: 'Please, fill out required fields'
     },
     quiz: {
       title: 'Find Your Automation Potential',
@@ -346,6 +348,8 @@ export const translations: Record<'en' | 'ru', Translation> = {
       title: 'Готовы автоматизировать ваш бизнес?',
       subtitle: 'Давайте обсудим, как автоматизация может трансформировать ваши операции и стимулировать рост.',
       button: 'Попробовать быстрый аудит',
+      messageLabel: 'Ваша задача (Необязательно, можно указать в письме)',
+      requiredFieldsMessage: 'Пожалуйста, заполните обязательные поля'
     },
     quiz: {
       title: 'Определите свой потенциал автоматизации',

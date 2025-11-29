@@ -36,8 +36,8 @@ export default function Header({ t, language, onLanguageChange }: HeaderProps) {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-              {language === 'en' ? 'Anton Svirepa' : 'Антон Свирепа'}
+            <span className="font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+              <img src={"/images/logo.svg"} alt={"Прогресс"} className={"w-14"}/>
             </span>
           </div>
 

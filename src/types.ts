@@ -73,6 +73,8 @@ export interface Translation {
     title: string;
     subtitle: string;
     button: string;
+    messageLabel: string;
+    requiredFieldsMessage: string;
   };
   quiz: { // New quiz structure
     title: string;

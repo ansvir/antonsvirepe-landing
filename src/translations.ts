@@ -9,7 +9,7 @@ export const translations: Record<'en' | 'ru', Translation> = {
       contact: 'Contact',
     },
     hero: {
-      greeting: 'Business Process Automation Expert',
+      greeting: 'Business Process Automation Experts',
       title: 'Transform Your Business with Smart IT Solutions',
       subtitle: 'I help companies streamline operations, eliminate manual tasks, and boost efficiency through custom automation and integration solutions.',
       cta: 'Start Your Project',
@@ -81,12 +81,12 @@ export const translations: Record<'en' | 'ru', Translation> = {
           {
             id: 'pricing',
             title: 'Transparent Pricing',
-            description: 'My rate is 30 BYN per hour for any service, whether it\'s implementation, development from scratch, or comprehensive turnkey projects. This is an investment in your business\'s efficiency, where every hour of work is aimed at achieving measurable results and optimizing your processes.',
+            description: 'Our rate is 30 BYN per hour for any service, whether it\'s implementation, development from scratch, or comprehensive turnkey projects. This is an investment in your business\'s efficiency, where every hour of work is aimed at achieving measurable results and optimizing your processes.',
           },
           {
             id: 'payment-support',
             title: 'Payment and Support',
-            description: 'As I provide services, physical delivery is not applicable. However, upon project completion, I offer flexible product support terms, which are billed separately. This ensures the stable and uninterrupted operation of your solution.',
+            description: 'As we provide services, physical delivery is not applicable. However, upon project completion, we offer flexible product support terms, which are billed separately. This ensures the stable and uninterrupted operation of your solution.',
           },
           {
             id: 'delivery-terms',
@@ -215,7 +215,7 @@ export const translations: Record<'en' | 'ru', Translation> = {
       contact: 'Контакты',
     },
     hero: {
-      greeting: 'Эксперт по автоматизации бизнес-процессов',
+      greeting: 'Эксперты по автоматизации бизнес-процессов',
       title: 'Трансформируйте ваш бизнес с помощью умных IT решений',
       subtitle: 'Я помогаю компаниям оптимизировать операции, устранить ручные задачи и повысить эффективность через индивидуальные решения автоматизации и интеграции.',
       cta: 'Начать проект',
@@ -287,12 +287,12 @@ export const translations: Record<'en' | 'ru', Translation> = {
           {
             id: 'pricing',
             title: 'Прозрачное ценообразование',
-            description: 'Моя ставка — 30 BYN в час за любые услуги, будь то внедрение, разработка с нуля или комплексные проекты «под ключ». Это инвестиция в эффективность вашего бизнеса, где каждый час работы направлен на достижение измеримых результатов и оптимизацию ваших процессов.',
+            description: 'Наша ставка — 30 BYN в час за любые услуги, будь то внедрение, разработка с нуля или комплексные проекты «под ключ». Это инвестиция в эффективность вашего бизнеса, где каждый час работы направлен на достижение измеримых результатов и оптимизацию ваших процессов.',
           },
           {
             id: 'payment-support',
             title: 'Оплата и поддержка',
-            description: 'Поскольку я предоставляю услуги, физическая доставка не предусмотрена. Однако, после завершения проекта, я предлагаю гибкие условия поддержки продукта, которые оплачиваются отдельно. Это гарантирует стабильную и бесперебойную работу вашего решения.',
+            description: 'Поскольку мы предоставляем услуги, физическая доставка не предусмотрена. Однако, после завершения проекта, мы предлагаем гибкие условия поддержки продукта, которые оплачиваются отдельно. Это гарантирует стабильную и бесперебойную работу вашего решения.',
           },
           {
             id: 'delivery-terms',

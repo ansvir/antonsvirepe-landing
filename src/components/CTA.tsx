@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Send } from 'lucide-react';
 import { Translation } from '../types';
 import { Button } from './ui/button';
@@ -132,14 +132,18 @@ export default function CTA({ t }: CTAProps) {
                     {t.cta.messageLabel}
                   </Label>
                   <textarea
-                            id="message"
-                            name="message"
-                            rows={4}
-                            value={formData.message}
-                            onChange={handleChange}
-                            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-600 outline-none text-lg"
+                      id="message"
+                      name="message"
+                      rows={4}
+                      value={formData.message}
+                      onChange={handleChange}
+                      className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-600 outline-none text-lg"
                   ></textarea>
                 </div>
+
+                <p className="text-sm text-gray-500 text-center mt-4">
+                  {t.quiz.finalStep.privacy}
+                </p>
 
                 <Button
                     type="submit"
